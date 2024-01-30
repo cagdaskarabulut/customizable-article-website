@@ -3,14 +3,14 @@ const { useQuill } = require("react-quilljs");
 // import dynamic from "next/dynamic";
 // const ReactQuill = dynamic(import('react-quill'), { ssr: false , loading: () => <p>Loading ...</p>})
 import React, { useEffect, useState } from "react";
-import TopicList from "../components/TopicList";
+import TopicList from "../app/components/TopicList";
 import TextField from "@mui/material/TextField";
 import Divider from '@mui/material/Divider';
 import {
   getStringWithCommaSeperatedFromList,
   replaceStringForUrlFormat,
-} from "../utils/StringUtils";
-import MyQuillEditor from "../components/reusableComponents/MyQuillEditor";
+} from "../app/utils/StringUtils";
+import MyQuillEditor from "../app/components/reusableComponents/MyQuillEditor";
 import {
   Button,
   Checkbox,
@@ -19,12 +19,12 @@ import {
   Grid,
   Switch,
 } from "@mui/material";
-import MyGrid from "../components/toolComponents/MyGrid";
+import MyGrid from "../app/components/toolComponents/MyGrid";
 import Image from "next/image";
-import S3UploadForm from "../components/pageComponents/S3UploadForm";
-import MyAlert from "../components/reusableComponents/MyAlert";
+import S3UploadForm from "../app/components/pageComponents/S3UploadForm";
+import MyAlert from "../app/components/reusableComponents/MyAlert";
 import styles from "./AdminPanel.module.scss";
-import LoadingFullPage from "../components/reusableComponents/LoadingFullPage";
+import LoadingFullPage from "../app/components/reusableComponents/LoadingFullPage";
 
 const AdminPanel = () => {
   return (<>AdminPanel</>)
