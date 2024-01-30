@@ -1,4 +1,3 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { getServerSession } from "next-auth";
@@ -22,7 +21,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <SessionProvider session={session}>
           <main className="mx-auto max-w-5xl text-2xl flex gap-2 text-white">
             <NavMenu />
